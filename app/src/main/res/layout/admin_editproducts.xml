@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="615dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/editprod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/nameedittext"
+            android:layout_width="270dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="35dp"
+            android:textSize="15dp"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@drawable/custom_rededittext"
+            android:hint="Name" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp" />
+
+        <ImageView
+            android:id="@+id/productImageDisplay"
+            android:layout_width="163dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/upload" />
+
+        <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="270dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:onClick="chooseImage"  />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Original Price"
+            android:textStyle="bold"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/originalpriceedittext"
+            android:layout_width="270dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="35dp"
+            android:textSize="15dp"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@drawable/custom_rededittext"
+            android:hint="(Numeric Value Only)" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Percentage Off"
+            android:textStyle="bold"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/percentageoffedittext"
+            android:layout_width="270dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="35dp"
+            android:textSize="15dp"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@drawable/custom_rededittext"
+            android:hint="(Numeric Value Only)" />
+
+        <Button
+            android:id="@+id/saveadd"
+            android:layout_width="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Save/Add" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Cancel"  />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

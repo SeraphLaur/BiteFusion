@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_light_shadow"
+    tools:context=".ProfilePage">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="735dp"
+        android:layout_height="761dp"
+        android:alpha="0.15"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/_07099805_1659719296228_gettyimages_1411084513_dsc00409_4ae562dc_763f_4c8b_8d50_29d276018412__1_" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="toDealsPage"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/deals" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Deals"
+                android:textColor="@color/md_theme_light_primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="toProfilePage"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="@color/md_theme_light_primary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="327dp"
+        android:layout_height="512dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493"
+        app:cardCornerRadius="13dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/md_theme_light_primaryContainer">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/usernametextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Username"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+
+                <!--Pwede tanggalin kung panget HAHHA yan lang na search kong pang border eh-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@android:color/black" />
+
+                <!--Pwede tanggalin kung panget HAHHA yan lang na search kong pang border eh-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:text="First Name:"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/firstnametextview"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="First Name"
+                        android:textSize="24dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:text="Last Name:"
+                        android:textSize="17dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/surnametextview"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="LastName"
+                        android:textSize="24dp"/>
+                </LinearLayout>
+                <!--Pwede tanggalin kung panget HAHHA yan lang na search kong pang border eh-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@android:color/black" />
+
+                <!--Pwede tanggalin kung panget HAHHA yan lang na search kong pang border eh-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/Editbtn"
+                    android:layout_width="272dp"
+                    android:layout_height="47dp"
+                    android:onClick="toLoginPage"
+                    android:text="Edit Profile"
+                    android:textSize="20sp"
+                    app:cornerRadius="13dp"/>
+
+                <Button
+                    android:id="@+id/Logoutbtn"
+                    android:layout_width="272dp"
+                    android:layout_height="47dp"
+                    android:onClick="toLoginPage"
+                    android:text="Logout"
+                    android:textSize="20sp"
+                    app:cornerRadius="13dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
